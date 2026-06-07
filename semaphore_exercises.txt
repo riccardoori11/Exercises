@@ -1,0 +1,16 @@
+
+Exercise 1)
+
+Thirty threads all want to run the same short task at once, but the rule is that no more than 3 of them may be inside the protected section at any single moment. As each thread enters, it records how 
+many workers are currently active and updates a running maximum, does a little work, then leaves. A counter tracks the live worker count, and a second counter holds the highest value that count ever 
+reached. Your job is to throttle entry so the active count never goes above 3. With 30 threads fighting over just a few slots, all 3 stay occupied, so the maximum observed concurrency comes out to exactly 
+3.
+Requirements
+
+    Use your language's counting semaphore with 3 permits.
+    Acquire a permit before entering and release it after the work, even though the work here is just a short sleep.
+    Track the maximum number of simultaneously active workers safely (use atomics or a lock so the max is accurate).
+    Print the maximum observed concurrency. It must be exactly 3.
+
+
+

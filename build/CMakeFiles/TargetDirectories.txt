@@ -1,0 +1,3 @@
+/home/riccardo/semaphore/build/CMakeFiles/semaphore.dir
+/home/riccardo/semaphore/build/CMakeFiles/edit_cache.dir
+/home/riccardo/semaphore/build/CMakeFiles/rebuild_cache.dir
