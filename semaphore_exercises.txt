@@ -14,3 +14,6 @@ Requirements
 
 
 
+Exercise 2)
+
+build a safe and unsafe variation of incrementing a variable by two threads	

@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/Exo1.dir/link.d CMakeFiles/Exo1.dir/Exercise1.cpp.o -o Exo1

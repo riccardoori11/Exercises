@@ -63,11 +63,13 @@ CMAKE_BINARY_DIR = /home/riccardo/semaphore/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/semaphore.dir/all
+all: CMakeFiles/Exo1.dir/all
+all: CMakeFiles/Exo2.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/semaphore.dir/codegen
+codegen: CMakeFiles/Exo1.dir/codegen
+codegen: CMakeFiles/Exo2.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,40 +77,73 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/semaphore.dir/clean
+clean: CMakeFiles/Exo1.dir/clean
+clean: CMakeFiles/Exo2.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/semaphore.dir
+# Target rules for target CMakeFiles/Exo1.dir
 
 # All Build rule for target.
-CMakeFiles/semaphore.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/semaphore.dir/build.make CMakeFiles/semaphore.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/semaphore.dir/build.make CMakeFiles/semaphore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/riccardo/semaphore/build/CMakeFiles --progress-num=1,2 "Built target semaphore"
-.PHONY : CMakeFiles/semaphore.dir/all
+CMakeFiles/Exo1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo1.dir/build.make CMakeFiles/Exo1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo1.dir/build.make CMakeFiles/Exo1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/riccardo/semaphore/build/CMakeFiles --progress-num=1,2 "Built target Exo1"
+.PHONY : CMakeFiles/Exo1.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/semaphore.dir/rule: cmake_check_build_system
+CMakeFiles/Exo1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/riccardo/semaphore/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/semaphore.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Exo1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/riccardo/semaphore/build/CMakeFiles 0
-.PHONY : CMakeFiles/semaphore.dir/rule
+.PHONY : CMakeFiles/Exo1.dir/rule
 
 # Convenience name for target.
-semaphore: CMakeFiles/semaphore.dir/rule
-.PHONY : semaphore
+Exo1: CMakeFiles/Exo1.dir/rule
+.PHONY : Exo1
 
 # codegen rule for target.
-CMakeFiles/semaphore.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/semaphore.dir/build.make CMakeFiles/semaphore.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/riccardo/semaphore/build/CMakeFiles --progress-num=1,2 "Finished codegen for target semaphore"
-.PHONY : CMakeFiles/semaphore.dir/codegen
+CMakeFiles/Exo1.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo1.dir/build.make CMakeFiles/Exo1.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/riccardo/semaphore/build/CMakeFiles --progress-num=1,2 "Finished codegen for target Exo1"
+.PHONY : CMakeFiles/Exo1.dir/codegen
 
 # clean rule for target.
-CMakeFiles/semaphore.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/semaphore.dir/build.make CMakeFiles/semaphore.dir/clean
-.PHONY : CMakeFiles/semaphore.dir/clean
+CMakeFiles/Exo1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo1.dir/build.make CMakeFiles/Exo1.dir/clean
+.PHONY : CMakeFiles/Exo1.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Exo2.dir
+
+# All Build rule for target.
+CMakeFiles/Exo2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo2.dir/build.make CMakeFiles/Exo2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo2.dir/build.make CMakeFiles/Exo2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/riccardo/semaphore/build/CMakeFiles --progress-num=3,4 "Built target Exo2"
+.PHONY : CMakeFiles/Exo2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Exo2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/riccardo/semaphore/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Exo2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/riccardo/semaphore/build/CMakeFiles 0
+.PHONY : CMakeFiles/Exo2.dir/rule
+
+# Convenience name for target.
+Exo2: CMakeFiles/Exo2.dir/rule
+.PHONY : Exo2
+
+# codegen rule for target.
+CMakeFiles/Exo2.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo2.dir/build.make CMakeFiles/Exo2.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/riccardo/semaphore/build/CMakeFiles --progress-num=3,4 "Finished codegen for target Exo2"
+.PHONY : CMakeFiles/Exo2.dir/codegen
+
+# clean rule for target.
+CMakeFiles/Exo2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo2.dir/build.make CMakeFiles/Exo2.dir/clean
+.PHONY : CMakeFiles/Exo2.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

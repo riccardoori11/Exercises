@@ -8,4 +8,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_executable(semaphore semaphore.cpp)
+add_executable(Exo1 Exercise1.cpp)
+add_executable(Exo2 Exercise2.cpp)

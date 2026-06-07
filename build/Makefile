@@ -124,41 +124,78 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named semaphore
+# Target rules for targets named Exo1
 
 # Build rule for target.
-semaphore: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 semaphore
-.PHONY : semaphore
+Exo1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Exo1
+.PHONY : Exo1
 
 # fast build rule for target.
-semaphore/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/semaphore.dir/build.make CMakeFiles/semaphore.dir/build
-.PHONY : semaphore/fast
+Exo1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo1.dir/build.make CMakeFiles/Exo1.dir/build
+.PHONY : Exo1/fast
 
-semaphore.o: semaphore.cpp.o
-.PHONY : semaphore.o
+#=============================================================================
+# Target rules for targets named Exo2
+
+# Build rule for target.
+Exo2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Exo2
+.PHONY : Exo2
+
+# fast build rule for target.
+Exo2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo2.dir/build.make CMakeFiles/Exo2.dir/build
+.PHONY : Exo2/fast
+
+Exercise1.o: Exercise1.cpp.o
+.PHONY : Exercise1.o
 
 # target to build an object file
-semaphore.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/semaphore.dir/build.make CMakeFiles/semaphore.dir/semaphore.cpp.o
-.PHONY : semaphore.cpp.o
+Exercise1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo1.dir/build.make CMakeFiles/Exo1.dir/Exercise1.cpp.o
+.PHONY : Exercise1.cpp.o
 
-semaphore.i: semaphore.cpp.i
-.PHONY : semaphore.i
+Exercise1.i: Exercise1.cpp.i
+.PHONY : Exercise1.i
 
 # target to preprocess a source file
-semaphore.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/semaphore.dir/build.make CMakeFiles/semaphore.dir/semaphore.cpp.i
-.PHONY : semaphore.cpp.i
+Exercise1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo1.dir/build.make CMakeFiles/Exo1.dir/Exercise1.cpp.i
+.PHONY : Exercise1.cpp.i
 
-semaphore.s: semaphore.cpp.s
-.PHONY : semaphore.s
+Exercise1.s: Exercise1.cpp.s
+.PHONY : Exercise1.s
 
 # target to generate assembly for a file
-semaphore.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/semaphore.dir/build.make CMakeFiles/semaphore.dir/semaphore.cpp.s
-.PHONY : semaphore.cpp.s
+Exercise1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo1.dir/build.make CMakeFiles/Exo1.dir/Exercise1.cpp.s
+.PHONY : Exercise1.cpp.s
+
+Exercise2.o: Exercise2.cpp.o
+.PHONY : Exercise2.o
+
+# target to build an object file
+Exercise2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo2.dir/build.make CMakeFiles/Exo2.dir/Exercise2.cpp.o
+.PHONY : Exercise2.cpp.o
+
+Exercise2.i: Exercise2.cpp.i
+.PHONY : Exercise2.i
+
+# target to preprocess a source file
+Exercise2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo2.dir/build.make CMakeFiles/Exo2.dir/Exercise2.cpp.i
+.PHONY : Exercise2.cpp.i
+
+Exercise2.s: Exercise2.cpp.s
+.PHONY : Exercise2.s
+
+# target to generate assembly for a file
+Exercise2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo2.dir/build.make CMakeFiles/Exo2.dir/Exercise2.cpp.s
+.PHONY : Exercise2.cpp.s
 
 # Help Target
 help:
@@ -169,10 +206,14 @@ help:
 	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... semaphore"
-	@echo "... semaphore.o"
-	@echo "... semaphore.i"
-	@echo "... semaphore.s"
+	@echo "... Exo1"
+	@echo "... Exo2"
+	@echo "... Exercise1.o"
+	@echo "... Exercise1.i"
+	@echo "... Exercise1.s"
+	@echo "... Exercise2.o"
+	@echo "... Exercise2.i"
+	@echo "... Exercise2.s"
 .PHONY : help
 
 

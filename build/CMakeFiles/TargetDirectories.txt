@@ -1,3 +1,4 @@
-/home/riccardo/semaphore/build/CMakeFiles/semaphore.dir
+/home/riccardo/semaphore/build/CMakeFiles/Exo1.dir
+/home/riccardo/semaphore/build/CMakeFiles/Exo2.dir
 /home/riccardo/semaphore/build/CMakeFiles/edit_cache.dir
 /home/riccardo/semaphore/build/CMakeFiles/rebuild_cache.dir
