@@ -10,5 +10,11 @@
   "command": "/usr/bin/c++   -std=gnu++20 -o CMakeFiles/Exo2.dir/Exercise2.cpp.o -c /home/riccardo/semaphore/Exercise2.cpp",
   "file": "/home/riccardo/semaphore/Exercise2.cpp",
   "output": "CMakeFiles/Exo2.dir/Exercise2.cpp.o"
+},
+{
+  "directory": "/home/riccardo/semaphore/build",
+  "command": "/usr/bin/c++   -std=gnu++20 -o CMakeFiles/Exo3.dir/Exercise3.cpp.o -c /home/riccardo/semaphore/Exercise3.cpp",
+  "file": "/home/riccardo/semaphore/Exercise3.cpp",
+  "output": "CMakeFiles/Exo3.dir/Exercise3.cpp.o"
 }
 ]

@@ -10,3 +10,4 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_executable(Exo1 Exercise1.cpp)
 add_executable(Exo2 Exercise2.cpp)
+add_executable(Exo3 Exercise3.cpp)

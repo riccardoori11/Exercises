@@ -149,6 +149,19 @@ Exo2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo2.dir/build.make CMakeFiles/Exo2.dir/build
 .PHONY : Exo2/fast
 
+#=============================================================================
+# Target rules for targets named Exo3
+
+# Build rule for target.
+Exo3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Exo3
+.PHONY : Exo3
+
+# fast build rule for target.
+Exo3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo3.dir/build.make CMakeFiles/Exo3.dir/build
+.PHONY : Exo3/fast
+
 Exercise1.o: Exercise1.cpp.o
 .PHONY : Exercise1.o
 
@@ -197,6 +210,30 @@ Exercise2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo2.dir/build.make CMakeFiles/Exo2.dir/Exercise2.cpp.s
 .PHONY : Exercise2.cpp.s
 
+Exercise3.o: Exercise3.cpp.o
+.PHONY : Exercise3.o
+
+# target to build an object file
+Exercise3.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo3.dir/build.make CMakeFiles/Exo3.dir/Exercise3.cpp.o
+.PHONY : Exercise3.cpp.o
+
+Exercise3.i: Exercise3.cpp.i
+.PHONY : Exercise3.i
+
+# target to preprocess a source file
+Exercise3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo3.dir/build.make CMakeFiles/Exo3.dir/Exercise3.cpp.i
+.PHONY : Exercise3.cpp.i
+
+Exercise3.s: Exercise3.cpp.s
+.PHONY : Exercise3.s
+
+# target to generate assembly for a file
+Exercise3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo3.dir/build.make CMakeFiles/Exo3.dir/Exercise3.cpp.s
+.PHONY : Exercise3.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -208,12 +245,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Exo1"
 	@echo "... Exo2"
+	@echo "... Exo3"
 	@echo "... Exercise1.o"
 	@echo "... Exercise1.i"
 	@echo "... Exercise1.s"
 	@echo "... Exercise2.o"
 	@echo "... Exercise2.i"
 	@echo "... Exercise2.s"
+	@echo "... Exercise3.o"
+	@echo "... Exercise3.i"
+	@echo "... Exercise3.s"
 .PHONY : help
 
 

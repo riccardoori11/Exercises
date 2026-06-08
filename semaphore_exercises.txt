@@ -17,3 +17,38 @@ Requirements
 Exercise 2)
 
 build a safe and unsafe variation of incrementing a variable by two threads	
+
+
+Exercise 3)
+
+Two methods, foo() and bar(), are called by two separate threads. The foo() method prints "foo" and the bar() method prints "bar".
+
+Design a mechanism so that the output is always "foobar" repeated n times.
+The Setup
+
+You have two threads running simultaneously, each with a simple job.
+
+    Thread 1: Calls foo() in a loop n times. Each call should print "foo".
+    Thread 2: Calls bar() in a loop n times. Each call should print "bar".
+    Output: Must be exactly "foobarfoobar...foobar" (n repetitions).
+
+The catch? These threads start concurrently and can be scheduled in any order by the operating system. Without synchronization, you might get "barfoo", "foofoofoobarbar", or any chaotic interleaving.
+The Rules
+
+With the setup clear, here are the ordering constraints that make this problem interesting.
+
+    "foo" must always print before "bar" in each pair.
+    "bar" must always print before the next "foo".
+    Both threads run n iterations.
+    The threads start concurrently and may be scheduled in any order.
+
+These rules define a strict alternation: foo, bar, foo, bar, foo, bar. Any deviation, like two consecutive foos or bars printing, means your solution is broken.
+The Goal
+
+So what does a correct solution look like?
+
+We need to design a synchronization mechanism that achieves all of these properties.
+
+    Correct ordering: Output is exactly "foobar" repeated n times.
+    No deadlock: Both threads complete their n iterations.
+    Efficient: Threads don't busy-wait or waste CPU cycles.
