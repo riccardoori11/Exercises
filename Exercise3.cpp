@@ -28,7 +28,6 @@ int main(){
 		
 		std::thread t1(ping,n);
 		std::thread t2(pong,n);
-
 		t1.join();
 		t2.join();
 

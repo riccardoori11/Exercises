@@ -162,6 +162,19 @@ Exo3/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo3.dir/build.make CMakeFiles/Exo3.dir/build
 .PHONY : Exo3/fast
 
+#=============================================================================
+# Target rules for targets named ContainsDuplicate
+
+# Build rule for target.
+ContainsDuplicate: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ContainsDuplicate
+.PHONY : ContainsDuplicate
+
+# fast build rule for target.
+ContainsDuplicate/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContainsDuplicate.dir/build.make CMakeFiles/ContainsDuplicate.dir/build
+.PHONY : ContainsDuplicate/fast
+
 Exercise1.o: Exercise1.cpp.o
 .PHONY : Exercise1.o
 
@@ -234,6 +247,30 @@ Exercise3.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Exo3.dir/build.make CMakeFiles/Exo3.dir/Exercise3.cpp.s
 .PHONY : Exercise3.cpp.s
 
+containsDuplicate.o: containsDuplicate.cpp.o
+.PHONY : containsDuplicate.o
+
+# target to build an object file
+containsDuplicate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContainsDuplicate.dir/build.make CMakeFiles/ContainsDuplicate.dir/containsDuplicate.cpp.o
+.PHONY : containsDuplicate.cpp.o
+
+containsDuplicate.i: containsDuplicate.cpp.i
+.PHONY : containsDuplicate.i
+
+# target to preprocess a source file
+containsDuplicate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContainsDuplicate.dir/build.make CMakeFiles/ContainsDuplicate.dir/containsDuplicate.cpp.i
+.PHONY : containsDuplicate.cpp.i
+
+containsDuplicate.s: containsDuplicate.cpp.s
+.PHONY : containsDuplicate.s
+
+# target to generate assembly for a file
+containsDuplicate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ContainsDuplicate.dir/build.make CMakeFiles/ContainsDuplicate.dir/containsDuplicate.cpp.s
+.PHONY : containsDuplicate.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -243,6 +280,7 @@ help:
 	@echo "... codegen"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... ContainsDuplicate"
 	@echo "... Exo1"
 	@echo "... Exo2"
 	@echo "... Exo3"
@@ -255,6 +293,9 @@ help:
 	@echo "... Exercise3.o"
 	@echo "... Exercise3.i"
 	@echo "... Exercise3.s"
+	@echo "... containsDuplicate.o"
+	@echo "... containsDuplicate.i"
+	@echo "... containsDuplicate.s"
 .PHONY : help
 
 

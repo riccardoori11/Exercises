@@ -246,6 +246,7 @@ CMakeFiles/Exo1.dir/Exercise1.cpp.o: /home/riccardo/semaphore/Exercise1.cpp \
   /usr/include/c++/15/streambuf \
   /usr/include/c++/15/string \
   /usr/include/c++/15/string_view \
+  /usr/include/c++/15/syncstream \
   /usr/include/c++/15/system_error \
   /usr/include/c++/15/thread \
   /usr/include/c++/15/tuple \
@@ -950,6 +951,8 @@ CMakeFiles/Exo1.dir/Exercise1.cpp.o:
 /usr/include/c++/15/stop_token:
 
 /usr/include/c++/15/string:
+
+/usr/include/c++/15/syncstream:
 
 /usr/include/bits/endian.h:
 

@@ -16,5 +16,11 @@
   "command": "/usr/bin/c++   -std=gnu++20 -o CMakeFiles/Exo3.dir/Exercise3.cpp.o -c /home/riccardo/semaphore/Exercise3.cpp",
   "file": "/home/riccardo/semaphore/Exercise3.cpp",
   "output": "CMakeFiles/Exo3.dir/Exercise3.cpp.o"
+},
+{
+  "directory": "/home/riccardo/semaphore/build",
+  "command": "/usr/bin/c++   -std=gnu++20 -o CMakeFiles/ContainsDuplicate.dir/containsDuplicate.cpp.o -c /home/riccardo/semaphore/containsDuplicate.cpp",
+  "file": "/home/riccardo/semaphore/containsDuplicate.cpp",
+  "output": "CMakeFiles/ContainsDuplicate.dir/containsDuplicate.cpp.o"
 }
 ]
