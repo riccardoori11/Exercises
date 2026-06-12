@@ -2,28 +2,17 @@
 #include <unordered_map>
 #include <string>
 
+using namespace std;
 
-class Solution{
-
-		public:
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+		if (!s.empty() && t.empty() || !s.empty() && t.empty() || t.size() != s.size()){
 		
-
-				bool isAnagram(std::string s,std::string t){
-						std::unordered_map<char, int> m1; std::unordered_map<char, int> m2;
-						for (auto x: s){
-								++m1[x];	
-						}
-
-						for (auto x: t){
-								++m2[x];	
-						}
-
-						return m1 == m2;	
-						
-
-				}
-
+		}
+		sort(s.begin(),s.end()); 
+		sort(t.begin(),t.end());
+		return s ==t;
+		
+    }
 };
-
-
-

@@ -1,23 +1,27 @@
-#include <vector>
+#include <algorithm>
+#include <iterator>
 #include <unordered_map>
+#include <string>
+#include <vector>
+
+using namespace std;
 
 class Solution {
 public:
-		std::vector<int> twoSum(std::vector<int>& nums, int target) {
-				std::unordered_map<int,int> hash;
+    vector<int> twoSum(vector<int>& nums, int target) {
+				unordered_map<int, int> map; 
+				
 
-				for (int i{0};i<nums.size();++i){
-						
-						int diff = target - nums[i];
+				for (int x{}; x < nums.size(); ++x){
+						int diff = target- nums[x];
 
-						auto iterator = hash.find(diff);
+						auto iterator = map.find(diff);
 
-						if (iterator != hash.end()){
-								return {iterator ->second,i};
+						if (iterator != map.end()){
+								return {iterator -> second,x};						
 						}
-						hash[nums[i]] = i;
+						map[nums[x]] = x;
 				}
 				return {};
-}
+    }
 };
-
